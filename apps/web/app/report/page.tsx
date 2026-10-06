@@ -38,6 +38,7 @@ export default function ReportPage() {
   const [body, setBody] = useState("");
   const [err, setErr] = useState("");
   const [photoIssue, setPhotoIssue] = useState("");
+  const [checkNote, setCheckNote] = useState("");
   const [busy, setBusy] = useState("");
   const [step, setStep] = useState(1);
   const [preview, setPreview] = useState("");
@@ -73,10 +74,18 @@ export default function ReportPage() {
   }, [jobId]);
 
   function photoRejected(job: { status?: string; suggested_type: string | null; unrelated?: boolean }) {
-    return !!job.unrelated || job.status === "failed" || (job.status === "succeeded" && !job.suggested_type);
+    return !!job.unrelated || (job.status === "succeeded" && !job.suggested_type);
   }
 
   function applyVision(job: { status?: string; suggested_type: string | null; confidence: number | null; unrelated?: boolean }) {
+    if (job.status === "failed") {
+      setPhotoIssue("");
+      setCheckNote(t("photo_check_busy"));
+      setSuggested(null);
+      setConfidence(null);
+      return;
+    }
+    setCheckNote("");
     if (photoRejected(job)) {
       setPhotoIssue(t("bad_photo"));
       setSuggested(null);
@@ -129,6 +138,7 @@ export default function ReportPage() {
     setFile(next);
     setPreview(next ? URL.createObjectURL(next) : "");
     setPhotoIssue("");
+    setCheckNote("");
     setSuggested(null);
     setConfidence(null);
     setMediaId(null);
@@ -206,6 +216,7 @@ export default function ReportPage() {
               : t("pin_help")}
         </p>
         {photoIssue ? <div className="banner warn">{photoIssue}</div> : null}
+        {checkNote ? <p className="muted">{checkNote}</p> : null}
         {err ? <div className="banner">{err}</div> : null}
         {busy ? <p className="muted">{busy}</p> : null}
         {suggested && confLabel && step === 3 ? (

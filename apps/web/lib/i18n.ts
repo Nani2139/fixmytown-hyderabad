@@ -63,6 +63,7 @@ const en = {
   photo: "Add Photo",
   bad_photo:
     "Upload a correct image of the street problem. It can be any of these: waterlogging, open manhole, garbage, streetlight, pothole, road left dug, illegal dumping, or stagnant water.",
+  photo_check_busy: "We could not check this photo just now. You can continue and choose the issue type.",
   pin: "Drop Location",
   type_step: "Details",
   next: "Continue",
@@ -162,6 +163,7 @@ const te: typeof en = {
   photo: "ఫోటో జోడించండి",
   bad_photo:
     "వీధి సమస్యకు సరైన ఫోటో పెట్టండి. ఇవి ఏవైనా కావచ్చు: వరద నీరు, తెరిచిన మ్యాన్‌హోల్, చెత్త, వీధి దీపం, గుంత, తవ్వి వదిలిన రోడ్డు, డంపింగ్ లేదా నిలిచిన నీరు.",
+  photo_check_busy: "ఈ ఫోటోను ఇప్పుడు చెక్ చేయలేకపోయాం. మీరు కొనసాగించి సమస్య రకాన్ని ఎంచుకోవచ్చు.",
   pin: "లొకేషన్ పెట్టండి",
   type_step: "వివరాలు",
   next: "కొనసాగించండి",
