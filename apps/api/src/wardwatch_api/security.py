@@ -54,7 +54,7 @@ def set_session_cookie(response: JSONResponse, user_id: str) -> None:
         max_age=COOKIE_MAX_AGE,
         httponly=True,
         samesite="lax",
-        secure=False,  # True when we are on HTTPS
+        secure=os.getenv("COOKIE_SECURE", "").lower() in {"1", "true", "yes"},
         path="/",
     )
 
