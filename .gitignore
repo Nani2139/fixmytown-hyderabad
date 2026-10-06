@@ -1,0 +1,30 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+
+# Node
+node_modules/
+.next/
+out/
+test-results/
+*.tsbuildinfo
+
+# Env (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Uploads
+media/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.log
+*.db

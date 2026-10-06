@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ticket.created",
+  "type": "object",
+  "required": ["ticket_id", "public_id", "type", "status", "lat", "lng", "neighborhood", "body", "author_id", "created_at"],
+  "properties": {
+    "ticket_id": { "type": "string" },
+    "public_id": { "type": "string" },
+    "type": { "enum": ["waterlogging", "open_manhole", "garbage", "streetlight", "pothole", "dug_road", "dumping", "stagnant_water"] },
+    "status": { "type": "string" },
+    "lat": { "type": "number" },
+    "lng": { "type": "number" },
+    "neighborhood": { "type": "string" },
+    "body": { "type": "string" },
+    "author_id": { "type": "string" },
+    "created_at": { "type": "string" }
+  }
+}

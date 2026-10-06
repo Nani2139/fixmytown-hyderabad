@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "vision.suggested",
+  "type": "object",
+  "required": ["job_id", "media_id", "suggested_type", "confidence", "model_name"],
+  "properties": {
+    "job_id": { "type": "string" },
+    "media_id": { "type": "string" },
+    "suggested_type": { "type": ["string", "null"] },
+    "confidence": { "type": ["number", "null"] },
+    "model_name": { "type": "string" }
+  }
+}

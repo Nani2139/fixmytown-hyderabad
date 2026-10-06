@@ -1,0 +1,11 @@
+{
+  "name": "Hyderabad",
+  "scope": "Hyderabad",
+  "product": "WardWatch",
+  "radiusKm": 20,
+  "center": { "lat": 17.3616, "lng": 78.4747 },
+  "bounds": {
+    "sw": { "lat": 17.2, "lng": 78.2 },
+    "ne": { "lat": 17.62, "lng": 78.7 }
+  }
+}

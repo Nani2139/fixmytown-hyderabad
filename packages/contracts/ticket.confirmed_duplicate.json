@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ticket.confirmed_duplicate",
+  "type": "object",
+  "required": ["canonical_ticket_id", "confirmation_id", "lat", "lng", "type", "new_count"],
+  "properties": {
+    "canonical_ticket_id": { "type": "string" },
+    "confirmation_id": { "type": "string" },
+    "lat": { "type": "number" },
+    "lng": { "type": "number" },
+    "type": { "type": "string" },
+    "new_count": { "type": "integer" }
+  }
+}
