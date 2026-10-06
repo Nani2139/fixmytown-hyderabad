@@ -1,5 +1,7 @@
 # FixMyTown
 
+Live site: https://fixmytown.vercel.app
+
 Civic street-issue map for **Hyderabad**. Your live location opens a **20 km** circle. You only see, report, and ask about issues inside that circle.
 
 Issue types: waterlogging, open manhole, garbage black spot, streetlight out, pothole, road left dug, illegal dumping, stagnant water. Each report carries a GHMC circle, a ward, and a severity. Vision suggests a category. You confirm. Duplicates within 50 m attach as +1. “Still there” works only within 400 m of the pin. Marking an issue fixed requires a photo of the repair.
@@ -66,6 +68,8 @@ cd apps\api
 
 Covers health, ready, auth, status machine, duplicate merge, 20 km rejection, still-there distance, and Ask retrieval (keyword rank, vector rank, RRF, refuse when nothing matches).
 
-## Deploy later
+## Live
 
-Web → Vercel. API + worker → Render. Postgres → Neon. Redis → Upstash. Images → R2. Production URL can stay `*.vercel.app`.
+Website: https://fixmytown.vercel.app
+
+API: https://fixmytown-api.onrender.com
