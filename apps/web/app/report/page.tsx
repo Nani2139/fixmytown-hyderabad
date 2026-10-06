@@ -301,7 +301,6 @@ export default function ReportPage() {
           </form>
         ) : null}
 
-        {photoIssue ? <p className="photo-warn">{photoIssue}</p> : null}
         {step === 3 && !photoIssue && (!confirmed || !severity || body.trim().length < 20) ? (
           <p className="photo-warn">
             Choose the issue type, how serious it is, and write at least 20 characters. The photo must be one of those street problems.
