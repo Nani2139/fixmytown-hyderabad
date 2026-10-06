@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import uuid
 from contextlib import asynccontextmanager
 
@@ -58,6 +59,7 @@ async def request_id_middleware(request: Request, call_next):
     try:
         response = await call_next(request)
     except Exception:
+        logging.getLogger("wardwatch").exception("request failed")
         return error_response(
             500,
             "INTERNAL",

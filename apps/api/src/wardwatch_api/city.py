@@ -6,9 +6,14 @@ import json
 from pathlib import Path
 from typing import Any
 
-CITIES_PATH = (
-    Path(__file__).resolve().parents[4] / "packages" / "geo" / "cities.json"
-)
+def _cities_path() -> Path:
+    bundled = Path(__file__).resolve().parent / "cities.json"
+    if bundled.exists():
+        return bundled
+    return Path(__file__).resolve().parents[4] / "packages" / "geo" / "cities.json"
+
+
+CITIES_PATH = _cities_path()
 
 
 def load_cities() -> list[dict[str, Any]]:

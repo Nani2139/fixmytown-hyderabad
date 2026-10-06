@@ -1,0 +1,43 @@
+[
+  {
+    "id": "hyderabad",
+    "name": "Hyderabad",
+    "scope": "Hyderabad",
+    "radiusKm": 20,
+    "center": { "lat": 17.3616, "lng": 78.4747 },
+    "bounds": {
+      "sw": { "lat": 17.2, "lng": 78.2 },
+      "ne": { "lat": 17.62, "lng": 78.7 }
+    },
+    "zoom": { "defaultPhone": 13, "defaultDesktop": 13, "min": 11, "max": 19 },
+    "circles": [
+      { "id": "charminar", "label": "Charminar", "lat": 17.3616, "lng": 78.4747 },
+      { "id": "khairatabad", "label": "Khairatabad", "lat": 17.415, "lng": 78.448 },
+      { "id": "secunderabad", "label": "Secunderabad", "lat": 17.445, "lng": 78.498 },
+      { "id": "serilingampally", "label": "Serilingampally", "lat": 17.455, "lng": 78.36 },
+      { "id": "kukatpally", "label": "Kukatpally", "lat": 17.4948, "lng": 78.3996 },
+      { "id": "lb_nagar", "label": "LB Nagar", "lat": 17.355, "lng": 78.55 }
+    ],
+    "neighborhoods": [
+      { "id": "charminar", "label": "Charminar", "lat": 17.3616, "lng": 78.4747 },
+      { "id": "laad_bazaar", "label": "Laad Bazaar", "lat": 17.361, "lng": 78.473 },
+      { "id": "koti", "label": "Koti", "lat": 17.384, "lng": 78.486 },
+      { "id": "abids", "label": "Abids", "lat": 17.394, "lng": 78.474 },
+      { "id": "nampally", "label": "Nampally", "lat": 17.392, "lng": 78.467 },
+      { "id": "banjara_hills", "label": "Banjara Hills", "lat": 17.415, "lng": 78.434 },
+      { "id": "jubilee_hills", "label": "Jubilee Hills", "lat": 17.431, "lng": 78.407 },
+      { "id": "khairatabad", "label": "Khairatabad", "lat": 17.4156, "lng": 78.4604 },
+      { "id": "secunderabad", "label": "Secunderabad", "lat": 17.4399, "lng": 78.4983 },
+      { "id": "begumpet", "label": "Begumpet", "lat": 17.444, "lng": 78.467 },
+      { "id": "hitec_city", "label": "HITEC City", "lat": 17.4435, "lng": 78.3772 },
+      { "id": "gachibowli", "label": "Gachibowli", "lat": 17.4401, "lng": 78.3489 },
+      { "id": "madhapur", "label": "Madhapur", "lat": 17.4483, "lng": 78.3915 },
+      { "id": "kondapur", "label": "Kondapur", "lat": 17.462, "lng": 78.357 },
+      { "id": "kukatpally", "label": "Kukatpally", "lat": 17.4948, "lng": 78.3996 },
+      { "id": "lb_nagar", "label": "LB Nagar", "lat": 17.346, "lng": 78.552 },
+      { "id": "dilsukhnagar", "label": "Dilsukhnagar", "lat": 17.368, "lng": 78.524 },
+      { "id": "uppal", "label": "Uppal", "lat": 17.401, "lng": 78.559 },
+      { "id": "kompally", "label": "Kompally", "lat": 17.5424, "lng": 78.489 }
+    ]
+  }
+]
